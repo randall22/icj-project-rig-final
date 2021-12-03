@@ -1,0 +1,27 @@
+{% extends '_templates/base.njk' %}
+
+{% set relative_path = "../" %}
+
+{% block page_title %}{{ title }}{% endblock %}
+
+{% block page_description %}{{ name }} by {{ author }}{% endblock %}
+
+{% block content %}
+  <article class="container">
+    <div class="row">
+    <div class="parent"> {# Responsive center code from Max Hesari From stackoverflow #} 
+      
+          <img src="../img/{{ slug }}.jpg" alt="" class="img-fluid mb-4">
+      
+      </div>
+      <div class = "h2-style">
+      <div class="col-sm-8">
+          <h1>{{ name }}</h1>
+          <p>Height: {{ height | safe }}</p>
+          <p>Mass: {{ mass }}</p>
+          <p>Life-span: {{ lifespan }}</p>
+      </div>
+      </div>
+    </div>
+  </article>
+{% endblock %}

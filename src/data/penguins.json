@@ -1,0 +1,67 @@
+{
+    "penguins": [
+      {
+        "name": "Crested Penguin",
+        "slug": "crested",
+        "height": "20 - 28 in.",
+        "mass": "10 lbs",
+        "lifespan": "15 - 20 years"
+      },
+      {
+        "name": "Emperor Penguin",
+        "slug": "emperor",
+        "height": "43 - 52 in.",
+        "mass": "51 lbs",
+        "lifespan": "20 years"
+      }
+    ],
+    "example_prose": [
+      {
+        "type": "text",
+        "value": "This is an example of a multi-paragraph intro formatted in a Google Doc to be used for <a href=\"http://archieml.org/#demo\">ArchieML</a>. What is said here is not that important, but the structure of this text in the Google Doc is."
+      },
+      {
+        "type": "subhead",
+        "value": "This is subhead"
+      },
+      {
+        "type": "text",
+        "value": "This is the second paragraph of the text to show how to loop over the text."
+      },
+      {
+        "type": "text",
+        "value": "# this is a list embedded in the text"
+      },
+      {
+        "type": "list",
+        "value": [
+          {
+            "type": "text",
+            "value": "First list item."
+          },
+          {
+            "type": "text",
+            "value": "Second list item."
+          }
+        ]
+      }
+    ],
+    "example_image": [
+      {
+        "type": "text",
+        "value": "This is another freeform array of text with multiple paragraphs but in this case there is an image call between two paragraphs of the text."
+      },
+      {
+        "type": "img",
+        "value": {
+          "filename": "the-clown.jpg",
+          "alt": "the clown"
+        }
+      },
+      {
+        "type": "text",
+        "value": "This is the second graph of text. The image above will be placed between the two graphs using an image macro in the processors.njk file."
+      }
+    ]
+  }
+  

@@ -1,0 +1,37 @@
+{% extends '_templates/base.njk' %}
+
+{% block page_title %}Index page title{% endblock %}
+
+{% block page_description %}The index search description for this page goes here.{% endblock %}
+
+{% block content %}
+<div class="container">
+<div class="row">
+  
+    <div class = "h1-style">
+      <h1>ICJ Final Project</h1>
+      <p>This page will cover two different penguins.</p>
+      <h2>Types of Penguins</h2>
+      </div>
+      
+       
+      <div class="row">
+      <div class="col-lg-6">
+        {% for penguin in penguins.penguins %}
+          <div class="col">
+            <img class ="fit-image-home" src="img/{{ penguin.slug }}.jpg" alt="Picture of a penguin." class="img-fluid">
+            </div>
+            {#Images are from https://www.theguardian.com/environment/2014/jun/29/emperor-penguins-at-risk-of-extinction-scientists-warn and 
+            https://www.sciencephoto.com/media/960797/view/erect-crested-penguins #}
+            <div class="col-lg-6">
+            <h3>
+            <a href="penguins/{{ penguin.slug }}.html">{{ penguin.name }}</a>
+            </h3>
+          </div>
+         
+        {% endfor %}
+        </div>
+  </div>
+  
+</div>
+{% endblock %}
